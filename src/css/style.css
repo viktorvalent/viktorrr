@@ -9,12 +9,15 @@
 nav {
     height: 4.5rem;
 }
-canvas { width: 100%; height: 100% }
+.burg-btn {
+    color: #2EC1AC;
+}
 .navbar-style {
     background-color: #212121;
+    color: #2EC1AC;
 }
 .nav-item a, .navbar-brand {
-    color: #D9CAB3;
+    color: #2EC1AC;
     font-family: 'Rubik', sans-serif;
 }
 .navbar-brand {
@@ -24,7 +27,7 @@ canvas { width: 100%; height: 100% }
     font-weight: 500;
 }
 .nav-item a:hover, .navbar-brand:hover {
-    color: #c2b29a;
+    color: #35e9ce;
 }
 .code {
     font-weight: 700;
@@ -39,7 +42,7 @@ header {
     font-family: 'Rubik', sans-serif;
 }
 .hello h4 {
-    color: #D9CAB3;
+    color: #2EC1AC;
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -56,13 +59,141 @@ header {
     color: #f6f6f6c7;
 }
 .btn-out-style {
-    border: 1px solid #D9CAB3;
-    color: #D9CAB3;
+    border: 1px solid #2EC1AC;
+    color: #2EC1AC;
     font-size: 1.1rem;
     padding: 1rem 2rem;
 }
 .btn-out-style:hover {
-    border: 1px solid #D9CAB3;
-    background-color: #D9CAB3;
-    color: #212121;
+    border: 1px solid #2ec1abb7;
+    background-color: #2ec1ab96;
+    color: #f3f3f3;
+}
+#about {
+    background-color: #212121;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+.text-about h4 {
+    color: #2EC1AC;
+    font-size: 2rem;
+}
+.text-about h4::after {
+    content: '';
+    border-bottom: 3px solid #2EC1AC;
+    width: 40px;
+    display: block;
+}
+.text-about p {
+    color: #f6f6f6b4;
+    padding: 0 8rem 0 0;
+    font-size: 1rem;
+}
+.profile-pic img {
+    position: relative;
+    border: 3px dashed #2EC1AC;
+    border-radius: 50%;
+    filter: sepia()
+}
+.profile-pic img:hover {
+    filter: none;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+#edu {
+    background-color: #212121;
+    min-height: 60vh;
+}
+#edu h4 {
+    color: #2EC1AC;
+    font-size: 2rem;
+
+}
+#edu h4::after {
+    content: '';
+    border-bottom: 3px solid #2EC1AC;
+    width: 40px;
+    display: block;
+}
+#skills {
+    background-color: #212121;
+    min-height: 50vh;
+}
+#skills h4 {
+    color: #2EC1AC;
+    font-size: 2rem;
+}
+#skills h4::after {
+    content: '';
+    border-bottom: 3px solid #2EC1AC;
+    width: 40px;
+    display: block;
+}
+#skills span {
+    padding: 2rem;
+    border-radius: 50%;
+}
+.item i {
+    color: #f3f3f398;
+    font-size: 4rem;
+}
+#skills i:hover {
+    color: #2ec1abcb;
+}
+#contact {
+    background: url(../image/bg-whatido.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+#contact h4 {
+    color: #2EC1AC;
+    font-size: 2rem;
+    padding: 2.5rem 0 1rem 0;
+}
+#contact h4::after {
+    content: '';
+    border-bottom: 3px solid #2EC1AC;
+    width: 40px;
+    display: block;
+}
+.contact-card {
+    background-color: #ffffff9c;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.follow {
+    background-color: #212121;
+    padding: 1rem 0;
+}
+.follow p {
+    color: #f3f3f3;
+    font-family: 'Rubik', sans-serif;
+    font-size:1.2rem;
+}
+.sosmed a {
+    margin: 0 1rem;
+}
+.sosmed i {
+    color: #f3f3f365;
+    font-size: 2.4rem;
+}
+.sosmed .fa-facebook-square:hover {
+    color: #2a58d8;
+}
+.sosmed .fa-instagram:hover {
+    color: #d82abb;
+}
+.sosmed .fa-linkedin:hover {
+    color: #1a48c5;
+}
+.sosmed .fa-github:hover {
+    color: #0a0b0e;
+}
+footer {
+    background-color: #212121;
+}
+.credit p {
+    color: #2EC1AC;
+    font-weight: 500;
 }
