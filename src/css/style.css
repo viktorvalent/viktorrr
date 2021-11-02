@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
+@import url(../css/keyframes.css);
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+*::selection {
+    background-color: #1c796b;
+}
 nav {
     height: 4.5rem;
 }
-.burg-btn {
+.nav-shadow {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+}
+#offcanvasNavbar, .offcanvas-body a {
+    background-color: #2EC1AC;
+    color: #212121 !important;
+}
+.offcanvas-body ul li a {
+    text-align: center;
+    margin: 1rem 0;
+
+}
+.fa-bars, .active {
     color: #2EC1AC;
+    font-size: 1.8rem;
 }
 .navbar-style {
     background-color: #212121;
@@ -19,6 +35,7 @@ nav {
 .nav-item a, .navbar-brand {
     color: #2EC1AC;
     font-family: 'Rubik', sans-serif;
+    transition: border-bottom 2s;
 }
 .navbar-brand {
     font-size: 1.5rem;
@@ -28,10 +45,10 @@ nav {
 }
 .nav-item a:hover, .navbar-brand:hover {
     color: #35e9ce;
+    border-bottom: 1px solid #35e9ce;
 }
 .code {
     font-weight: 700;
-    font-style: italic;
 }
 .space {
     margin-left: 2rem;
@@ -97,7 +114,8 @@ header {
 }
 .profile-pic img:hover {
     filter: none;
-    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
 #edu {
     background-color: #212121;
@@ -138,6 +156,8 @@ header {
 }
 #skills i:hover {
     color: #2ec1abcb;
+    animation: shake 0.7s;
+    animation-iteration-count: 1;
 }
 #contact {
     background: url(../image/bg-whatido.jpg);
@@ -149,7 +169,6 @@ header {
 #contact h4 {
     color: #2EC1AC;
     font-size: 2rem;
-    padding: 2.5rem 0 1rem 0;
 }
 #contact h4::after {
     content: '';
@@ -169,14 +188,17 @@ header {
 .follow p {
     color: #f3f3f3;
     font-family: 'Rubik', sans-serif;
-    font-size:1.2rem;
+    font-size: 1rem;
 }
 .sosmed a {
     margin: 0 1rem;
 }
 .sosmed i {
     color: #f3f3f365;
-    font-size: 2.4rem;
+    font-size: 2rem;
+}
+.sosmed i:hover {
+    transform: translate(0, -5px);
 }
 .sosmed .fa-facebook-square:hover {
     color: #2a58d8;
@@ -196,4 +218,7 @@ footer {
 .credit p {
     color: #2EC1AC;
     font-weight: 500;
+    font-size: .8rem;
 }
+
+

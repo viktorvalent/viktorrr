@@ -1,0 +1,271 @@
+@media screen and (max-width: 991px) {
+    #navigation {
+        display: none;
+    }
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-about {
+        text-align: center;
+    }
+    .text-about p {
+        color: #f6f6f6b4;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .text-about h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    .profile-pic img {
+        width: 315px;
+        height: 315px;
+    }
+    #edu h4 {
+        text-align: center;
+    }
+    #edu h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    #skills h4 {
+        text-align: center;
+    }
+    #skills h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    #contact h4 {
+        text-align: center;
+    }
+    #contact h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    .hello h4 {
+        font-size: .8rem;
+    }
+    .hello h1 {
+        font-size: 3.2rem;
+    }
+    .hello h2 {
+        font-size: 1.5rem;
+    }
+    .hello p {
+        font-size: .7rem;
+    }
+    .btn-out-style {
+        font-size: 1.1rem;
+        padding: .6rem 1.5rem;
+    }
+    .sosmed i {
+        font-size: 2rem;
+    }
+    nav {
+        height: 3.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    .fa-bars, .active {
+        font-size: 1.3rem;
+    }
+    .navbar-toggler {
+        height: 1.9rem;
+    }
+    .item i {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-about p {
+        font-size: .9rem;
+    }
+    .text-about h4, #contact h4, #edu h4, #skills h4 {
+        font-size: 1.6rem;
+    }
+    .profile-pic img {
+        width: 285px;
+        height: 285px;
+    }
+    .hello h4 {
+        font-size: .6rem;
+    }
+    .hello h1 {
+        font-size: 2.5rem;
+    }
+    .hello h2 {
+        font-size: 1.4rem;
+    }
+    .hello p {
+        font-size: .6rem;
+    }
+    .btn-out-style {
+        font-size: .9rem;
+        padding: .6rem 1.5rem;
+    }
+    .sosmed i {
+        font-size: 1.7rem;
+    }
+    nav {
+        height: 3.5rem;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .fa-bars, .active {
+        font-size: 1.1rem;
+    }
+    .navbar-toggler {
+        height: 2rem;
+    }
+    .item i {
+        font-size: 3rem;
+    }
+    .con-card {
+        padding: 0 2.3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text-about p {
+        font-size: .7rem;
+    }
+    .text-about h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    .profile-pic img {
+        width: 245px;
+        height: 245px;
+    }
+    #skills h4 {
+        text-align: center;
+    }
+    #contact h4 {
+        text-align: center;
+    }
+    #contact h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    .hello h4 {
+        font-size: .8rem;
+    }
+    .hello h1 {
+        font-size: 2.6rem;
+    }
+    .hello h2 {
+        font-size: 1.3rem;
+    }
+    .hello p {
+        font-size: .7rem;
+    }
+    .btn-out-style {
+        font-size: .9rem;
+        padding: .6rem 1.5rem;
+    }
+    .sosmed i {
+        font-size: 1.3rem;
+    }
+    nav {
+        height: 3.5rem;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .fa-bars, .active {
+        font-size: 1.1rem;
+    }
+    .navbar-toggler {
+        height: 2rem;
+    }
+    .item i {
+        font-size: 3rem;
+    }
+    .hero {
+        margin: 0 1.8rem;
+    }
+    .credit p {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .text-about p {
+        font-size: .7rem;
+    }
+    .text-about h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    .profile-pic img {
+        width: 200px;
+        height: 200px;
+    }
+    .btn-out-style {
+        font-size: .6rem;
+    }
+    #skills h4 {
+        text-align: center;
+    }
+    #contact h4 {
+        text-align: center;
+    }
+    #contact h4::after {
+        content: '';
+        border-bottom: 3px solid #2EC1AC;
+        width: 40px;
+        display: block;
+        margin: auto;
+    }
+    .hello h4 {
+        font-size: .7rem;
+    }
+    .hello h1 {
+        font-size: 2.2rem;
+    }
+    .hello h2 {
+        font-size: 1rem;
+    }
+    .hello p {
+        font-size: .6rem;
+    }
+    .btn-out-style {
+        font-size: .6rem;
+        padding: .6rem 1.5rem;
+    }
+    .sosmed i {
+        font-size: 1rem;
+    }
+    .item i {
+        font-size: 2rem;
+    }
+    .hero {
+        padding: .8rem;
+    }
+}
