@@ -183,8 +183,7 @@
         font-size: .7rem;
     }
     .btn-out-style {
-        font-size: .9rem;
-        padding: .6rem 1.5rem;
+        font-size: .8rem;
     }
     .sosmed i {
         font-size: 1.3rem;
@@ -204,8 +203,11 @@
     .item i {
         font-size: 3rem;
     }
+    .item {
+        padding: 1rem 0;
+    }
     .hero {
-        margin: 0 1.8rem;
+        margin: 0 .8rem;
     }
     .credit p {
         font-size: .6rem;
@@ -228,7 +230,7 @@
         height: 200px;
     }
     .btn-out-style {
-        font-size: .6rem;
+        font-size: .5rem;
     }
     #skills h4 {
         text-align: center;
@@ -244,16 +246,16 @@
         margin: auto;
     }
     .hello h4 {
-        font-size: .7rem;
+        font-size: .8rem;
     }
     .hello h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .hello h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .hello p {
-        font-size: .6rem;
+        font-size: .7rem;
     }
     .btn-out-style {
         font-size: .6rem;
@@ -266,6 +268,6 @@
         font-size: 2rem;
     }
     .hero {
-        padding: .8rem;
+        padding: .2rem;
     }
 }
