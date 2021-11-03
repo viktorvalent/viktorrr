@@ -9,11 +9,16 @@
 *::selection {
     background-color: #1c796b;
 }
+body {
+    background-color: #212121;
+}
 nav {
     height: 4.5rem;
+    position: sticky;
+    transition: transform 0.6s;
 }
-.nav-shadow {
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+.nav--shadow {
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.39);
 }
 #offcanvasNavbar, .offcanvas-body a {
     background-color: #2EC1AC;
@@ -24,7 +29,7 @@ nav {
     margin: 1rem 0;
 
 }
-.fa-bars, .active {
+.fa-bars {
     color: #2EC1AC;
     font-size: 1.8rem;
 }
@@ -35,17 +40,28 @@ nav {
 .nav-item a, .navbar-brand {
     color: #2EC1AC;
     font-family: 'Rubik', sans-serif;
-    transition: border-bottom 2s;
+    transition: border-bottom 0.5s;
+    cursor: pointer;
 }
+.active a {
+    border-bottom: 1px solid #35e9ce !important;
+}
+.nav--hidden {
+    transform: translateY(-4.5em);
+}
+
 .navbar-brand {
     font-size: 1.5rem;
 }
 .nav-item a {
     font-weight: 500;
 }
-.nav-item a:hover, .navbar-brand:hover {
+.nav-item a:hover{
     color: #35e9ce;
     border-bottom: 1px solid #35e9ce;
+}
+.navbar-brand:hover {
+    color: #35e9ce;
 }
 .code {
     font-weight: 700;
@@ -55,7 +71,7 @@ nav {
 }
 header {
     background-color: #212121;
-    min-height: 89vh;
+    min-height: 100vh;
     font-family: 'Rubik', sans-serif;
 }
 .hello h4 {
@@ -68,6 +84,9 @@ header {
     font-weight: 700;
     font-size: 5rem;
 }
+header .nama .emoj {
+    font-size: 5rem;
+}
 .hello h2 {
     color: #f6f6f6b2;
     font-size: 3rem;
@@ -75,13 +94,16 @@ header {
 .hello p {
     color: #f6f6f6c7;
 }
-.btn-out-style {
+.hero {
+    padding: 2rem 0 0 0;
+}
+.hero .btn-out-style {
     border: 1px solid #2EC1AC;
     color: #2EC1AC;
     font-size: 1.1rem;
     padding: 1rem 2rem;
 }
-.btn-out-style:hover {
+.hero .btn-out-style:hover {
     border: 1px solid #2ec1abb7;
     background-color: #2ec1ab96;
     color: #f3f3f3;
@@ -100,6 +122,7 @@ header {
     border-bottom: 3px solid #2EC1AC;
     width: 40px;
     display: block;
+    transform: translateY(.7rem);
 }
 .text-about p {
     color: #f6f6f6b4;
@@ -131,6 +154,7 @@ header {
     border-bottom: 3px solid #2EC1AC;
     width: 40px;
     display: block;
+    transform: translateY(.7rem);
 }
 #skills {
     background-color: #212121;
@@ -145,6 +169,7 @@ header {
     border-bottom: 3px solid #2EC1AC;
     width: 40px;
     display: block;
+    transform: translateY(.7rem);
 }
 #skills span {
     padding: 2rem;
@@ -155,16 +180,46 @@ header {
     font-size: 4rem;
 }
 #skills i:hover {
-    color: #2ec1abcb;
     animation: shake 0.7s;
     animation-iteration-count: 1;
+}
+.item .fa-html5:hover {
+    color: #ee0505;
+}
+.item .fa-css3-alt:hover {
+    color: #3982f0;
+}
+.item .fa-js:hover {
+    color: #eede05;
+}
+.item .fa-vuejs:hover {
+    color: #05bb3c;
+}
+.item .fa-node-js:hover {
+    color: #1cca24;
+}
+.item .fa-bootstrap:hover {
+    color: #861ffc;
+}
+.item .fa-figma:hover {
+    color: #ee6e05;
+}
+.item .fa-git-alt:hover {
+    color: #ca4a00;
+}
+.item .fa-github:hover {
+    color: #0f0e0e;
+}
+.item .fa-gitlab:hover {
+    color: #ee7605;
 }
 #contact {
     background: url(../image/bg-whatido.jpg);
     background-size: cover;
-    min-height: 100vh;
+    height: max-content;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 #contact h4 {
     color: #2EC1AC;
@@ -175,11 +230,24 @@ header {
     border-bottom: 3px solid #2EC1AC;
     width: 40px;
     display: block;
+    transform: translateY(.7rem);
 }
 .contact-card {
-    background-color: #ffffff9c;
-    padding: 2rem;
     border-radius: 20px;
+}
+.con-card {
+    padding: 0 2rem;
+}
+.contact-card .btn-submit {
+    background-color: #2EC1AC;
+    color: #212121;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.contact-card .btn-submit:hover {
+    background-color: #2ec1abc2;
+    color: #eeeeee;
 }
 .follow {
     background-color: #212121;
@@ -196,15 +264,16 @@ header {
 .sosmed i {
     color: #f3f3f365;
     font-size: 2rem;
+    transition: transform 0.12s;
 }
-.sosmed i:hover {
-    transform: translate(0, -5px);
+.follow .sosmed a i:hover {
+    transform: translateY(-3px);
 }
 .sosmed .fa-facebook-square:hover {
     color: #2a58d8;
 }
 .sosmed .fa-instagram:hover {
-    color: #d82abb;
+    color: #c9259f;
 }
 .sosmed .fa-linkedin:hover {
     color: #1a48c5;
@@ -219,6 +288,7 @@ footer {
     color: #2EC1AC;
     font-weight: 500;
     font-size: .8rem;
+    transform: translate(0, 1rem);
 }
 
 

@@ -59,7 +59,7 @@
     .hello h4 {
         font-size: .8rem;
     }
-    .hello h1 {
+    .hello h1, header .nama .emoj {
         font-size: 3.2rem;
     }
     .hello h2 {
@@ -106,7 +106,7 @@
     .hello h4 {
         font-size: .6rem;
     }
-    .hello h1 {
+    .hello h1, header .nama .emoj {
         font-size: 2.5rem;
     }
     .hello h2 {
@@ -139,6 +139,9 @@
     }
     .con-card {
         padding: 0 2.3rem;
+    }
+    .follow p {
+        font-size: .8rem;
     }
 }
 
@@ -173,7 +176,7 @@
     .hello h4 {
         font-size: .8rem;
     }
-    .hello h1 {
+    .hello h1, header .nama .emoj {
         font-size: 2.6rem;
     }
     .hello h2 {
@@ -248,7 +251,7 @@
     .hello h4 {
         font-size: .8rem;
     }
-    .hello h1 {
+    .hello h1,header .nama .emoj {
         font-size: 2.5rem;
     }
     .hello h2 {
@@ -265,7 +268,7 @@
         font-size: 1rem;
     }
     .item i {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .hero {
         padding: .2rem;
